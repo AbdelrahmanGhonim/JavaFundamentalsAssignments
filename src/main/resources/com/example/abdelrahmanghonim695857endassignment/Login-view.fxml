@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-radius: 30;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.abdelrahmanghonim695857endassignment.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="223.0" style="-fx-background-color: #006e64;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="29.0" layoutY="25.0" prefHeight="42.0" prefWidth="151.0" text="Beat Bazaar" textOverrun="CLIP">
+               <font>
+                  <Font name="Verdana Bold" size="21.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.24703087885985753">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1315789520740509" green="0.12731482088565826" blue="0.12731482088565826" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="301.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="91.0" layoutY="38.0" prefHeight="18.0" prefWidth="124.0" text="Secure Login" textFill="#282727">
+               <font>
+                  <Font name="Toppan Bunkyu Midashi Gothic Extrabold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="127.0" text="Username" textFill="#282727" />
+            <Label layoutX="28.0" layoutY="183.0" text="password" textFill="#282727" />
+            <TextField fx:id="UserNameTextField" layoutX="104.0" layoutY="123.0" promptText="Username" style="-fx-background-color: #e9e9eb;" />
+            <PasswordField fx:id="PasswordPasswordField" layoutX="104.0" layoutY="179.0" promptText="Password" style="-fx-background-color: #e9e9eb;" />
+            <Button fx:id="LoginButton" layoutX="29.0" layoutY="250.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="26.0" prefWidth="249.0" style="-fx-background-color: #138d82;" text="login" textFill="#2f302f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="LabelLoginMessage" layoutX="50.0" layoutY="76.0" prefHeight="17.0" prefWidth="232.0" textFill="#e10707" />
+            <Button fx:id="CancelButton" layoutX="29.0" layoutY="306.0" mnemonicParsing="false" onAction="#CancelButtonOnAction" prefHeight="34.0" prefWidth="248.0" style="-fx-background-color: #138d82;" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
